@@ -52,10 +52,10 @@ src/main/resources/init_db.sql
 
 ## [Other information and helpfull tips](#otherinformationandhelpfulltips)
 
-⚠️ If you wanna connect my project to your database, just add all the necessary information in
+⚠️ If you wanna connect my project to your database, just add all the necessary information in the
 
 ```
-the src/main/java/util
+src/main/java/util
 ```
 
 ```java
