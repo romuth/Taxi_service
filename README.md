@@ -14,7 +14,7 @@ Includes functionality for creating new users, authorizing them, and updating al
 <h2 id="overview"> :cloud: Overview</h2>
 
 <p align="justify"> 
-  In this project, you can enter the car into the database, with all the necessary information such as manufacturer, model, year of manufacture. Including all its drivers. Also this project includes logging.
+  In this project, you can enter the car into the database, with all the necessary information such as manufacturer, model, year of manufacture. Including all its drivers.
 </p>
 
 ### **Technology used**
@@ -52,7 +52,7 @@ src/main/resources/init_db.sql
 
 ## [Other information and helpfull tips](#otherinformationandhelpfulltips)
 
-⚠️ If you wanna connect my project to your database just add all the necessary information in
+⚠️ If you wanna connect my project to your database, just add all the necessary information in
 
 ```
 the src/main/java/util
