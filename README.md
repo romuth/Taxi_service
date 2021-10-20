@@ -17,6 +17,16 @@ Includes functionality for creating new users, authorizing them, and updating al
   In this project, you can enter the car into the database, with all the necessary information such as manufacturer, model, year of manufacture. Including all its drivers. Also this project includes logging.
 </p>
 
+### **Technology used**
+
+- [x] Java 11
+- [x] JDBC
+- [x] JSP/JSTL and Java Servlets
+- [x] Log42j
+- [x] MySQL
+- [x] Apache Tomcat
+
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## [Installation](#installation)
@@ -42,7 +52,7 @@ src/main/resources/init_db.sql
 
 ## [Other information and helpfull tips](#otherinformationandhelpfulltips)
 
-If you wanna connect my project to your database just add all the necessary information in
+⚠️ If you wanna connect my project to your database just add all the necessary information in
 
 ```
 the src/main/java/util
