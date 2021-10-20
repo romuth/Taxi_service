@@ -43,7 +43,7 @@ https://tomcat.apache.org/download-90.cgi
 ### **MySQL**
 
 Second things what you need is relational database like MySQL or PostgreSQL.
-All the needed resources you can find in
+All the needed resources you can find in 
 
 ```
 src/main/resources/init_db.sql
@@ -66,7 +66,7 @@ public class ConnectionUtil {
     private static final String JDBC_DRIVER = "JDBC DRIVER";
 ```
 
-All logging configuration you can find in
+All logging configuration you can find in 
 
 ```
 the src/main/java/resources/log4j2.xml
