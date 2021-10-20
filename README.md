@@ -17,7 +17,7 @@ Includes functionality for creating new users, authorizing them, and updating al
   In this project, you can enter the car into the database, with all the necessary information such as manufacturer, model, year of manufacture. Including all its drivers.
 </p>
 
-### **Technology used**
+### **Technologies used**
 
 - [x] Java 11
 - [x] JDBC
