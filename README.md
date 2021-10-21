@@ -33,12 +33,7 @@ Includes functionality for creating new users, authorizing them, and updating al
 
 ### **Apache Tomcat**
 
-You need to install Apache Tomcat® version 9.0.54 or latest on your computer as a web server.
-Just follow the link
-
-```
-https://tomcat.apache.org/download-90.cgi
-```
+You need to install [Apache Tomcat](https://tomcat.apache.org/download-90.cgi)® version 9.0.54 or latest on your computer as a web server.
 
 ### **MySQL**
 
