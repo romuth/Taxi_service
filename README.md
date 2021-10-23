@@ -14,7 +14,7 @@ Includes functionality for creating new users, authorizing them, and updating al
 <h2 id="overview"> :cloud: Overview</h2>
 
 <p align="justify"> 
-  In this project, you can enter the car into the database, with all the necessary information such as manufacturer, model, year of manufacture. Including all its drivers.
+  In this project, you can enter the car into the database, with all the necessary information such as manufacturer, model, year of manufacture. Including all its drivers. You will be redirected to the registration page first, where you can create a new driver.Because of the filter
 </p>
 
 ### **Technologies used**
