@@ -47,7 +47,7 @@ src/main/resources/init_db.sql
 
 ## [Other information and helpfull tips](#otherinformationandhelpfulltips)
 
-- You can test this project online on [Heroku](https://basic-taxi.herokuapp.com/login)
+- You can test this project online on [Heroku](https://basic-taxi.herokuapp.com/login) on an american server.
 
 ⚠️ If you wanna connect my project to your database, just add all the necessary information in the
 
