@@ -5,6 +5,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import mate.exception.LoginUniqueException;
 import mate.lib.Injector;
 import mate.model.Driver;
 import mate.service.DriverService;
@@ -22,13 +23,18 @@ public class AddDriverController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-            throws IOException {
+            throws IOException, ServletException {
         String login = req.getParameter("login");
         String password = req.getParameter("password");
         String name = req.getParameter("name");
         String licenseNumber = req.getParameter("license_number");
         Driver driver = new Driver(name, licenseNumber, login, password);
-        driverService.create(driver);
-        resp.sendRedirect("/login");
+        try {
+            driverService.create(driver);
+            resp.sendRedirect("/login");
+        } catch (LoginUniqueException e) {
+            req.setAttribute("errorMsg", e.getMessage());
+            req.getRequestDispatcher("/WEB-INF/views/drivers/add.jsp").forward(req, resp);
+        }
     }
 }
