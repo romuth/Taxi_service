@@ -4,11 +4,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import mate.exception.DataProcessingException;
+import mate.exception.LoginUniqueException;
 import mate.lib.Dao;
 import mate.model.Driver;
 import mate.util.ConnectionUtil;
@@ -32,6 +34,8 @@ public class DriverDaoImpl implements DriverDao {
                 driver.setId(resultSet.getObject(1, Long.class));
             }
             return driver;
+        } catch (SQLIntegrityConstraintViolationException e) {
+            throw new LoginUniqueException("Driver with this login is already registered");
         } catch (SQLException e) {
             throw new DataProcessingException("Couldn't create "
                     + driver + ". ", e);
